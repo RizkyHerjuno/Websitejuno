@@ -27,3 +27,21 @@ export default defineConfig([
     },
   },
 ])
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        blue: '#0073BA',
+        black: '#0B0C0C',
+        white: '#F8FAFF',
+        orange: '#F6821F',
+        mainBlue: '#001F3F',
+        gray: '#8E8E8E',
+      },
+    },
+  },
+  plugins: [],
+}
+

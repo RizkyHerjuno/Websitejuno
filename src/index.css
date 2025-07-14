@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Sfpro;
+  src: url(../src/assets/fonts/SFPRO.otf);
+}
+
+@font-face {
+  font-family: Glancyr;
+  src: url(../src/assets/fonts/Glancyr.otf);
+}
+
+@font-face {
+  font-family: GlancyrSembold;
+  src: url(../src/assets/fonts/GlancyrSembold.otf);
+}
+
+@font-face {
+  font-family: Glancyrmedium;
+  src: url(../src/assets/fonts/Glancyrmedium.otf);
+}
+
+@font-face {
+  font-family: Glancyrlight;
+  src: url(../src/assets/fonts/Glancyrlight.otf);
+}
+
+@font-face {
+  font-family: Glancyrregular;
+  src: url(../src/assets/fonts/Glancyrregular.otf);
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-sfpro: SFPRO, "sans-serif";
+  --font-glancyr: Glancyr, "sans-serif";
+  --font-glancyrsembold: GlancyrSembold, "sans-serif";
+  --font-glancyrmedium: GlancyrMedium, "sans-serif";
+  --font-glancyrregular: Glancyrregular, "sans-serif";
+  --font-glancyrlight: Glancyrlight, "sans-serif";
+}

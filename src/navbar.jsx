@@ -5,7 +5,7 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => setIsOpen((prev) => !prev);
 
   const navLinks = [
     { title: "Home", href: "/", isActive: true },
@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#00264d] shadow-md sticky top-0 z-50">
+    <nav className="font-glancyrregular bg-[#001F3F] shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
@@ -25,22 +25,28 @@ const Navbar = () => {
             </a>
           </div>
 
+          {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className={`text-white font-semibold text-sm tracking-wide hover:text-white ${
-                  link.isActive
-                    ? "underline underline-offset-4"
-                    : "hover:underline"
-                }`}
+                className={`relative text-white font-semibold text-sm tracking-wide hover:text-white group`}
               >
                 {link.title}
+                {/* Garis animasi tetap ada ketika menu terbuka */}
+                <span
+                  className={`absolute inset-x-0 bottom-0 h-px bg-white transition-all duration-300 origin-center ${
+                    isOpen || link.isActive
+                      ? "scale-x-100"
+                      : "scale-x-0 group-hover:scale-x-100"
+                  }`}
+                ></span>
               </a>
             ))}
           </div>
 
+          {/* Mobile Menu Button */}
           <div className="flex lg:hidden">
             <button
               onClick={toggleMenu}
@@ -58,13 +64,14 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       <div className={`${isOpen ? "block" : "hidden"} lg:hidden`}>
         <div className="px-4 pt-2 pb-4 space-y-1 bg-[#00264d]">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              onClick={() => setIsOpen(false)}
+              onClick={() => setIsOpen(false)} // Close the menu after clicking
               className={`block px-3 py-2 rounded-md text-base font-medium text-white ${
                 link.isActive
                   ? "underline underline-offset-4"

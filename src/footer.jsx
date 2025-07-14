@@ -11,14 +11,17 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#00264d] text-white text-center py-12 px-6">
-      <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-4">
-        Connect with innovation. Explore our journey and be part of the future of robotics.
+    <footer className="bg-[#001F3F] text-white text-center py-0 px-0">
+      <hr className="border-white border-opacity-5 mb-4" />
+      <h2 className="font-glancyrmedium text-xl sm:text-2xl lg:text-3xl mb-4">
+        Connect with innovation. Explore our journey and be part of the future
+        of robotics.
       </h2>
 
-      <p className="text-sm sm:text-base text-white text-opacity-80 max-w-3xl mx-auto mb-8 leading-relaxed">
-        Whether you're passionate about cutting-edge innovation, real-world engineering challenges,
-        or collaborative tech experiences ROBOTIK offers the perfect space to explore and grow.
+      <p className="font-glancyrlight text-sm sm:text-base text-white text-opacity-80 max-w-3xl mx-auto mb-8 leading-relaxed">
+        Whether you're passionate about cutting-edge innovation, real-world
+        engineering challenges, or collaborative tech experiences ROBOTIK offers
+        the perfect space to explore and grow.
       </p>
 
       <div className="flex justify-center gap-6 text-xl sm:text-2xl mb-6">
@@ -44,7 +47,7 @@ const Footer = () => {
 
       <hr className="border-white border-opacity-20 mb-4" />
 
-      <p className="text-xs text-white text-opacity-70">© 2025 ROBOTIK 2025</p>
+      <p className="font-medium text-xs text-white text-opacity-70">© 2025 ROBOTIIK 2025</p>
     </footer>
   );
 };
