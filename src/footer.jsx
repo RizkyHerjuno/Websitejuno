@@ -12,8 +12,8 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-[#001F3F] text-white text-center py-0 px-0">
-      <hr className="border-white border-opacity-5 mb-4" />
-      <h2 className="font-glancyrmedium text-xl sm:text-2xl lg:text-3xl mb-4">
+      <hr className="border-white mb-4" />
+      <h2 className="mx-auto font-glancyrlight max-w-4xl text-xl sm:text-2xl lg:text-3xl mb-4">
         Connect with innovation. Explore our journey and be part of the future
         of robotics.
       </h2>
@@ -45,7 +45,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <hr className="border-white border-opacity-20 mb-4" />
+      <hr className="border-white border-opacity-1000 mb-4" />
 
       <p className="font-medium text-xs text-white text-opacity-70">© 2025 ROBOTIIK 2025</p>
     </footer>

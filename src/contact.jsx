@@ -12,11 +12,13 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 export default function Contact() {
   return (
     <section className="w-full bg-[#001F3F] py-15 px-8">
-      <div className="max-w-[1440px] mx-auto h-[420px] bg-black text-white rounded-xl p-8 flex gap-0">
+      <h1 className="font-glancyrmedium text-[white] flex text-7xl  mb-4 justify-center">Contact</h1>
+      
+      <div className="max-w-[1440px] mx-auto h-[450px] bg-black text-white rounded-xl p-8 flex gap-0">
         {/* Kiri: Info Kontak dan Sosial Media */}
         <div className="flex-1 flex flex-col justify-between">
           <div>
-            <h2 className="font-glancyr text-7xl font-bold mb-4">Get in touch</h2>
+            <h2 className="font-glancyrmedium text-7xl mb-4">Get in touch</h2>
             <p className="font-glancyr font-semibold text-sm mb-6">Lets Gooo!!!</p>
             <div className="mr-[10px] flex font-glancyr font-bold">
               <div className="flex flex-col gap-4 text-1xl mr-[20px]">

@@ -19,12 +19,12 @@ const Achievements = () => {
         {/* Flex container untuk label "Achievements" dan deskripsi */}
         <div className="flex justify-start items-start px-6 sm:px-12 w-full gap-[72px] mt-[30px] max-w-full">
           {/* Label "Achievements" di kiri */}
-          <div className="font-glancyrsemibold font-bold text-xl sm:text-2xl text-[#00264d] mr-[50px]">
+          <div className="font-glancyrsemibold font-bold text-xl sm:text-2xl text-[black] mr-[50px]">
             [Achievements]
           </div>
 
           {/* Deskripsi di sebelah kanan "Achievements" */}
-          <p className="font-glancyrlight font-semibold max-w-full text-[36px] leading-[44px] text-[#00264d] text-opacity-90">
+          <p className="font-glancyrlight font-semibold max-w-full text-[36px] leading-[44px] text-[black] text-opacity-90">
             A visual journey through the lens, one snapshot at a time capturing
             the essence of our travel adventures around the world.
           </p>
