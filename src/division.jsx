@@ -89,8 +89,8 @@ const Division = () => {
             width={400} 
         />
         <HoverCard 
-            image="/src/assets/robot1.jpg" 
-            title="Division 2" 
+            src={robot1}
+            alt="Division 2" 
             height={550} 
             width={800} 
         />
