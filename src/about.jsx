@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import robot1 from '../src/assets/robot1.jpg'; 
 
 const images = [
-  { src: "/src/assets/robot1.jpg", title: "Robot 1" },
-  { src: "/src/assets/robot1.jpg", title: "Robot 2" },
-  { src: "/src/assets/robot1.jpg", title: "Robot 3" },
-  { src: "/src/assets/robot1.jpg", title: "Robot 4" },
+  { src: {robot1}, title: "Robot 1" },
+  { src: {robot1}, title: "Robot 2" },
+  { src: {robot1}, title: "Robot 3" },
+  { src: {robot1}, title: "Robot 4" },
 ];
 
 const About = () => {
