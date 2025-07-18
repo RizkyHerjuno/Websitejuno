@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "./navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
