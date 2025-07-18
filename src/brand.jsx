@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import robot1 from '/src/assets/robot1.jpg'; // Pastikan ini sesuai dengan path yang benar
 
-const BrandGallery = () => {
+const Brand = () => {
   const [hovered, setHovered] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -13,19 +14,19 @@ const BrandGallery = () => {
   };
 
   const images = [
-    { id: 1, src: "/src/assets/robot1.jpg", title: "Brand 1", description: "Experience the beauty of Dal Lake." },
-    { id: 2, src: "/src/assets/robot1.jpg", title: "Brand 2", description: "Explore Srinagar's floating gardens." },
-    { id: 3, src: "/src/assets/robot1.jpg", title: "Brand 3", description: "Majestic views of the houseboats." },
-    { id: 4, src: "/src/assets/robot1.jpg", title: "Brand 4", description: "Tranquil mornings on the lake." },
-    { id: 5, src: "/src/assets/robot1.jpg", title: "Brand 5", description: "Breathtaking sunset on the water." },
-    { id: 6, src: "/src/assets/robot1.jpg", title: "Brand 6", description: "The perfect blend of nature and tranquility." },
-    { id: 7, src: "/src/assets/robot1.jpg", title: "Brand 7", description: "A mesmerizing experience on Dal Lake." },
-    { id: 8, src: "/src/assets/robot1.jpg", title: "Brand 8", description: "Floating through the serene waters." },
-    { id: 9, src: "/src/assets/robot1.jpg", title: "Brand 9", description: "Exploring the historic beauty of Srinagar." },
-    { id: 10, src: "/src/assets/robot1.jpg", title: "Brand 10", description: "Revel in the splendor of Dal Lake." },
-    { id: 11, src: "/src/assets/robot1.jpg", title: "Brand 11", description: "Floating through the serene waters." },
-    { id: 12, src: "/src/assets/robot1.jpg", title: "Brand 12", description: "Exploring the historic beauty of Srinagar." },
-    { id: 13, src: "/src/assets/robot1.jpg", title: "Brand 13", description: "Revel in the splendor of Dal Lake." },
+    { id: 1, src: robot1, title: "Brand 1", description: "Experience the beauty of Dal Lake." },
+    { id: 2, src: robot1, title: "Brand 2", description: "Explore Srinagar's floating gardens." },
+    { id: 3, src: robot1, title: "Brand 3", description: "Majestic views of the houseboats." },
+    { id: 4, src: robot1, title: "Brand 4", description: "Tranquil mornings on the lake." },
+    { id: 5, src: robot1, title: "Brand 5", description: "Breathtaking sunset on the water." },
+    { id: 6, src: robot1, title: "Brand 6", description: "The perfect blend of nature and tranquility." },
+    { id: 7, src: robot1, title: "Brand 7", description: "A mesmerizing experience on Dal Lake." },
+    { id: 8, src: robot1, title: "Brand 8", description: "Floating through the serene waters." },
+    { id: 9, src: robot1, title: "Brand 9", description: "Exploring the historic beauty of Srinagar." },
+    { id: 10, src: robot1, title: "Brand 10", description: "Revel in the splendor of Dal Lake." },
+    { id: 11, src: robot1, title: "Brand 11", description: "Floating through the serene waters." },
+    { id: 12, src: robot1, title: "Brand 12", description: "Exploring the historic beauty of Srinagar." },
+    { id: 13, src: robot1, title: "Brand 13", description: "Revel in the splendor of Dal Lake." },
   ];
 
   return (
@@ -48,7 +49,6 @@ const BrandGallery = () => {
               src={image.src}
               alt={image.title}
             />
-
             {/* Animated Title - Moves up on hover */}
             <div className={`
               absolute bottom-0 left-2 right-2 p-4 
@@ -58,7 +58,6 @@ const BrandGallery = () => {
             `}>
               {image.title}
             </div>
-
             {/* Description - Appears from bottom on hover */}
             <div className={`
               absolute bottom-0 left-2 right-2 p-4
@@ -89,7 +88,6 @@ const BrandGallery = () => {
               src={image.src}
               alt={image.title}
             />
-
             {/* Animated Title - Moves up on hover */}
             <div className={`
               absolute bottom-0 left-2 right-2 p-4 
@@ -99,7 +97,6 @@ const BrandGallery = () => {
             `}>
               {image.title}
             </div>
-
             {/* Description - Appears from bottom on hover */}
             <div className={`
               absolute bottom-0 left-2 right-2 p-4
@@ -116,4 +113,4 @@ const BrandGallery = () => {
   );
 };
 
-export default BrandGallery;
+export default Brand;
