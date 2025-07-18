@@ -1,6 +1,34 @@
 import React, { useState } from "react";
 import robot1 from "/src/assets/robot1.jpg";
 
+const images = [
+  {
+    src: robot1,
+    title: "Amarine",
+    description: "This is a description of Amarine.",
+  },
+  {
+    src: robot1,
+    title: "Quadcopter",
+    description: "This is a description of Quadcopter.",
+  },
+  {
+    src: robot1,
+    title: "RnD",
+    description: "This is a description of RnD.",
+  },
+  {
+    src: robot1,
+    title: "Humanoid",
+    description: "This is a description of Humanoid.",
+  },
+  {
+    src: robot1,
+    title: "MIT",
+    description: "This is a description of MIT.",
+  },
+];
+
 const Information = () => {
   const [hovered, setHovered] = useState(null);
 
@@ -25,7 +53,6 @@ const Information = () => {
             innovation.
           </p>
         </div>
-
         <div className="font-sfpro font-semibold w-1/4">
           <p className="text-s text-[black]">
             Whether you're seeking hands-on innovation, collaborative
@@ -37,150 +64,36 @@ const Information = () => {
 
       {/* Main Content */}
       <div className="flex space-x-0 overflow-x-auto absolute flex gap-[0px] whitespace-nowrap overflow-hidden">
-        {/* Card 1 */}
-        <div
-          className="relative w-[400px] h-[425px] p-2 flex flex-col justify-between image-card"
-          onMouseEnter={() => handleMouseEnter(1)}
-          onMouseLeave={handleMouseLeave}
-        >
-          <img
-            src={robot1}
-            alt="image1"
-            className="w-full h-full object-cover rounded-[20px]"
-          />
+        {images.map((image, index) => (
           <div
-            className={`absolute bottom-0 left-0 right-0 p-6 flex text-white transition-all duration-500 ease-in-out ${
-              hovered === 1 ? "translate-y-[-30px]" : "translate-y-0"
-            }`}
+            key={index}
+            className="relative w-[400px] h-[425px] p-2 flex flex-col justify-between image-card"
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
           >
-            <h2 className="text-3xl font-semibold">Amarine</h2>
+            <img
+              src={image.src}
+              alt={`image${index + 1}`}
+              className="w-full h-full object-cover rounded-[20px]"
+            />
+            <div
+              className={`absolute bottom-0 left-0 right-0 p-6 flex text-white transition-all duration-500 ease-in-out ${
+                hovered === index ? "translate-y-[-30px]" : "translate-y-0"
+              }`}
+            >
+              <h2 className="text-3xl font-semibold">{image.title}</h2>
+            </div>
+            <div
+              className={`absolute bottom-0 left-0 right-0 p-6 text-white flex transition-all duration-500 ease-in-out ${
+                hovered === index
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-4"
+              }`}
+            >
+              <p className="text-xl">{image.description}</p>
+            </div>
           </div>
-          <div
-            className={`absolute bottom-0 left-0 right-0 p-6 text-white flex transition-all duration-500 ease-in-out ${
-              hovered === 1
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-4"
-            }`}
-          >
-            <p className="text-xl">This is a description of Amarine.</p>
-          </div>
-        </div>
-
-        {/* Card 2 */}
-        <div
-          className="relative w-[400px] h-[425px] p-2 flex flex-col justify-between image-card"
-          onMouseEnter={() => handleMouseEnter(2)}
-          onMouseLeave={handleMouseLeave}
-        >
-          <img
-            src={robot1}
-            alt="image2"
-            className="w-full h-full object-cover rounded-[20px]"
-          />
-          <div
-            className={`absolute bottom-0 left-0 right-0 p-6 flex text-white transition-all duration-500 ease-in-out ${
-              hovered === 2 ? "translate-y-[-30px]" : "translate-y-0"
-            }`}
-          >
-            <h2 className="text-3xl font-semibold">Quadcopter</h2>
-          </div>
-          <div
-            className={`absolute bottom-0 left-0 right-0 p-6 text-white flex transition-all duration-500 ease-in-out ${
-              hovered === 2
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-4"
-            }`}
-          >
-            <p className="text-xl">This is a description of Quadcopter.</p>
-          </div>
-        </div>
-
-        {/* Card 3 */}
-        <div
-          className="relative w-[400px] h-[425px] p-2 flex flex-col justify-between image-card"
-          onMouseEnter={() => handleMouseEnter(3)}
-          onMouseLeave={handleMouseLeave}
-        >
-          <img
-            src={robot1}
-            alt="image3"
-            className="w-full h-full object-cover rounded-[20px]"
-          />
-          <div
-            className={`absolute bottom-0 left-0 right-0 p-6 flex text-white transition-all duration-500 ease-in-out ${
-              hovered === 3 ? "translate-y-[-30px]" : "translate-y-0"
-            }`}
-          >
-            <h2 className="text-3xl font-semibold">RnD</h2>
-          </div>
-          <div
-            className={`absolute bottom-0 left-0 right-0 p-6 text-white flex transition-all duration-500 ease-in-out ${
-              hovered === 3
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-4"
-            }`}
-          >
-            <p className="text-xl">This is a description of RnD.</p>
-          </div>
-        </div>
-
-        {/* Card 4 */}
-        <div
-          className="relative w-[400px] h-[425px] p-2 flex flex-col justify-between image-card"
-          onMouseEnter={() => handleMouseEnter(4)}
-          onMouseLeave={handleMouseLeave}
-        >
-          <img
-            src={robot1}
-            alt="image4"
-            className="w-full h-full object-cover rounded-[20px]"
-          />
-          <div
-            className={`absolute bottom-0 left-0 right-0 p-6 flex text-white transition-all duration-500 ease-in-out ${
-              hovered === 4 ? "translate-y-[-30px]" : "translate-y-0"
-            }`}
-          >
-            <h2 className="text-3xl font-semibold">Humanoid</h2>
-          </div>
-          <div
-            className={`absolute bottom-0 left-0 right-0 p-6 text-white flex transition-all duration-500 ease-in-out ${
-              hovered === 4
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-4"
-            }`}
-          >
-            <p className="text-xl">This is a description of Humanoid.</p>
-          </div>
-        </div>
-
-        {/* Card 5 */}
-        <div
-          className="relative w-[400px] h-[425px] p-2 flex flex-col justify-between image-card"
-          onMouseEnter={() => handleMouseEnter(5)}
-          onMouseLeave={handleMouseLeave}
-        >
-          <img
-            src={robot1}
-            alt="image5"
-            className="w-full h-full object-cover rounded-[20px]"
-          />
-          <div
-            className={`absolute bottom-16 left-0 right-0 p-6 flex justify-center items-center text-white transition-all duration-500 ease-in-out ${
-              hovered === 5 ? "translate-y-[-30px]" : "translate-y-0"
-            }`}
-          >
-            <h2 className="text-3xl font-semibold">MIT</h2>
-          </div>
-          <div
-            className={`absolute bottom-0 left-0 right-0 p-6 text-white justify-center items-center flex transition-all duration-500 ease-in-out ${
-              hovered === 5
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-4"
-            }`}
-          >
-            <p className="text-xl">This is a description of MIT.</p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
