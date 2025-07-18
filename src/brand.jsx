@@ -39,12 +39,12 @@ const BrandGallery = () => {
         {images.map((image, index) => (
           <div
             key={image.id}
-            className="relative w-[240px] h-[250px] p-2 flex flex-col justify-between image-card group overflow-hidden"
+            className="relative w-[200px] h-[200px] p-2 flex flex-col justify-between image-card group overflow-hidden"
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
             <img
-              className="w-full h-full object-cover rounded-[20px] transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-full object-cover rounded-[20px] transition-transform duration-300 group-hover:scale-100"
               src={image.src}
               alt={image.title}
             />
@@ -52,7 +52,48 @@ const BrandGallery = () => {
             {/* Animated Title - Moves up on hover */}
             <div className={`
               absolute bottom-0 left-2 right-2 p-4 
-              text-white font-glancyrmedium text-2xl 
+              text-white font-glancyrmedium text-xl 
+              transition-all duration-1500 ease-in-out
+              ${hovered === index ? "translate-y-[-40px]" : "translate-y-0"}
+            `}>
+              {image.title}
+            </div>
+
+            {/* Description - Appears from bottom on hover */}
+            <div className={`
+              absolute bottom-0 left-2 right-2 p-4
+              text-white font-glancyrlight text-xs
+              transition-all duration-1500 ease-in-out
+              ${hovered === index ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
+            `}>
+              {image.description}
+            </div>
+          </div>
+        ))}
+      </motion.div>
+      <motion.div
+        className="flex"
+        initial={{ x: 0 }}
+        animate={{ x: "-100%" }}
+        transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+      >
+        {images.map((image, index) => (
+          <div
+            key={image.id}
+            className="relative w-[200px] h-[200px] p-2 flex flex-col justify-between image-card group overflow-hidden"
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <img
+              className="w-full h-full object-cover rounded-[20px] transition-transform duration-300 group-hover:scale-100"
+              src={image.src}
+              alt={image.title}
+            />
+
+            {/* Animated Title - Moves up on hover */}
+            <div className={`
+              absolute bottom-0 left-2 right-2 p-4 
+              text-white font-glancyrmedium text-xl 
               transition-all duration-1500 ease-in-out
               ${hovered === index ? "translate-y-[-40px]" : "translate-y-0"}
             `}>

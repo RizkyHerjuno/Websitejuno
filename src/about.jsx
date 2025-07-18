@@ -11,13 +11,13 @@ const images = [
 const About = () => {
   return (
     <section
-      className="w-full h-[544px]"
+      className="w-[1440px] h-[555px]"
       style={{
         backgroundColor: "#f5eedc", // cream background
-        paddingTop: "45px",
-        paddingBottom: "40px", // disesuaikan agar total tinggi 544px
-        paddingLeft: "0",
-        paddingRight: "",
+        paddingTop: "80px",
+        paddingBottom: "272px", // disesuaikan agar total tinggi 544px
+        paddingLeft: "45px",
+        paddingRight: "45px",
         height: "544px",
         boxSizing: "border-box",
         overflow: "hidden",
@@ -36,9 +36,9 @@ const About = () => {
         </h2>
         {/* Paragraf */}
         <p
-          className="font-glancyrsemibold font-bold max-w-[980px] text-[18px] leading-[20px] mb-[64px]"
+          className=" font-bold max-w-[850px] text-[18px] leading-[20px] mb-[64px]"
           style={{
-            fontFamily: "Glancyr, sans-serif",
+            fontFamily: "sfpro, sans-serif",
             color: "#0B0C0C",
           }}
         >
@@ -62,7 +62,7 @@ const About = () => {
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
-            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             className="flex flex-shrink-0"
           >
             {images.map((image, index) => {
@@ -85,7 +85,7 @@ const About = () => {
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
-            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             className="flex flex-shrink-0"
           >
             {images.map((image, index) => {
@@ -108,7 +108,7 @@ const About = () => {
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
-            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             className="flex flex-shrink-0"
           >
             {images.map((image, index) => {
@@ -131,7 +131,7 @@ const About = () => {
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
-            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             className="flex flex-shrink-0"
           >
             {images.map((image, index) => {
@@ -154,7 +154,7 @@ const About = () => {
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
-            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             className="flex flex-shrink-0"
           >
             {images.map((image, index) => {
