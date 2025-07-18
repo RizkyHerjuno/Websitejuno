@@ -5,27 +5,27 @@ const images = [
   {
     src: robot2,
     title: "Amarine",
-    description: "This is a description of Amarine.",
+    description: "This is a description of Amarine."
   },
   {
     src: robot2,
     title: "Quadcopter",
-    description: "This is a description of Quadcopter.",
+    description: "This is a description of Quadcopter."
   },
   {
     src: robot2,
     title: "RnD",
-    description: "This is a description of RnD.",
+    description: "This is a description of RnD."
   },
   {
     src: robot2,
     title: "Humanoid",
-    description: "This is a description of Humanoid.",
+    description: "This is a description of Humanoid."
   },
   {
     src: robot2,
     title: "MIT",
-    description: "This is a description of MIT.",
+    description: "This is a description of MIT."
   },
 ];
 
