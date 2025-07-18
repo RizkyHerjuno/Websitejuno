@@ -63,7 +63,7 @@ const HoverCard = ({ image, title, height, width }) => {
 const Division = () => {
   return (
     <div className="bg-[#f5eedc] min-h-screen p-8">
-      <div className="mb-6 ml-2">
+      <div className="mb-6 ml-2 py-5">
         <h1 className="text-xl font-glancyrsemibold font-bold text-[black]">
           [Technical Division]
         </h1>

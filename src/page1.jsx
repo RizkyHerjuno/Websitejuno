@@ -13,11 +13,11 @@ const Page1 = () => {
 
   return (
     <>
-      <Navbar />
 
-      <section className="relative bg-[#001F3F] min-h-[calc(100vh-80px)] flex flex-col justify-center text-white overflow-hidden">
+
+      <section className="relative bg-[#001F3F] min-h-screen flex flex-col justify-center text-white overflow-hidden">
         {/* Judul utama */}
-        <div className="flex-1 flex flex-col items-center justify-center text-center px-6">
+        <div className="flex-1 flex flex-col items-center justify-center text-center  px-6">
           <h1 className="font-glancyrmedium text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-wide">
             Satu Visi, Wujud Aksi,
             <br />

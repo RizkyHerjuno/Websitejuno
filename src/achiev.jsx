@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import robot1 from "../src/assets/robot1.jpg"; 
@@ -15,7 +15,7 @@ const Achievements = () => {
 
   return (
     <>
-      <section className="relative bg-[#f5eedc] w-[1264px] h-[680px] flex flex-col justify-start items-center text-white overflow-hidden">
+      <section className="relative bg-[#f5eedc] w-full h-[680px] flex flex-col justify-start items-center text-white overflow-hidden">
         {/* Flex container untuk label "Achievements" dan deskripsi */}
         <div className="flex justify-start items-start px-6 sm:px-12 w-full gap-[72px] mt-[30px] max-w-full">
           {/* Label "Achievements" di kiri */}
@@ -38,7 +38,7 @@ const Achievements = () => {
             onMouseEnter={() => setIsHoveredExplore(true)}
             onMouseLeave={() => setIsHoveredExplore(false)}
           >
-            <div className="relative w-[125px] h-8 mr-2">
+            <div className="relative w-[125px] h-8  mr-2">
               <span
                 className={`absolute transition-opacity duration-700 ease-in-out ${
                   isHoveredExplore ? "opacity-0" : "opacity-100"
@@ -63,10 +63,10 @@ const Achievements = () => {
           </div>
 
           {/* Gambar yang berjajar di bawah deskripsi dan berada di pojok kanan bawah */}
-          <div className="absolute bottom-0 left-50 flex gap-[0px] whitespace-nowrap overflow-hidden">
+          <div className="absolute bottom-0 left-75 flex gap-[0px] overflow-x-auto max-w-full whitespace-nowrap">
             {/* Gambar 1 */}
             <div
-              className={`w-[325px] h-[504px] rounded-[32px] p-[25px] transition-all duration-500 ease-in-out transform ${
+              className={`w-[350px] h-[504px] rounded-[32px] p-[10px] transition-all duration-500 ease-in-out transform ${
                 activeImage === 0 ? "scale-x-125 translate-x-10" : ""
               }`}
               onMouseEnter={() => handleImageHover(0)}
@@ -74,9 +74,9 @@ const Achievements = () => {
             >
               <div className="relative w-full h-full">
                 <img
-                  src={robot1} 
+                  src={robot1}
                   alt="Achievement 1"
-                  className="w-full h-full object-cover rounded-[24px]"
+                  className="w-[auto] h-[450px] object-cover rounded-[24px]"
                 />
                 {activeImage === 0 && (
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold">
@@ -88,7 +88,7 @@ const Achievements = () => {
 
             {/* Gambar 2 */}
             <div
-              className={`w-[325px] h-[504px] rounded-[24px] p-[25px] transition-all duration-500 ease-in-out transform ${
+              className={`w-[350px] h-[504px] rounded-[32px] p-[10px] transition-all duration-500 ease-in-out transform ${
                 activeImage === 1
                   ? "scale-x-125 translate-x-10"
                   : activeImage === 0
@@ -102,7 +102,7 @@ const Achievements = () => {
                 <img
                   src={robot1} // Menggunakan gambar yang diimpor
                   alt="Achievement 2"
-                  className="w-full h-full object-cover rounded-[24px]"
+                  className="w-[auto] h-[450px] object-cover rounded-[24px]"
                 />
                 {activeImage === 1 && (
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold">
@@ -114,7 +114,7 @@ const Achievements = () => {
 
             {/* Gambar 3 */}
             <div
-              className={`w-[325px] h-[504px] rounded-[24px] p-[25px] transition-all duration-500 ease-in-out transform ${
+              className={`w-[350px] h-[504px] rounded-[32px] p-[10px] transition-all duration-500 ease-in-out transform ${
                 activeImage === 2
                   ? "scale-x-125 translate-x-10"
                   : activeImage === 1
@@ -130,7 +130,7 @@ const Achievements = () => {
                 <img
                   src={robot1} // Menggunakan gambar yang diimpor
                   alt="Achievement 3"
-                  className="w-full h-full object-cover rounded-[24px]"
+                  className="w-[auto] h-[450px] object-cover rounded-[24px]"
                 />
                 {activeImage === 2 && (
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold">
@@ -142,7 +142,7 @@ const Achievements = () => {
 
             {/* Gambar 4 */}
             <div
-              className={`w-[325px] h-[504px] rounded-[24px] p-[25px] transition-all duration-500 ease-in-out transform ${
+              className={`w-[325px] h-[504px] rounded-[32px] p-[10px] transition-all duration-500 ease-in-out transform ${
                 activeImage === 3
                   ? "scale-x-125 translate-x-10"
                   : activeImage === 2
@@ -160,7 +160,7 @@ const Achievements = () => {
                 <img
                   src={robot1} // Menggunakan gambar yang diimpor
                   alt="Achievement 4"
-                  className="w-full h-full object-cover rounded-[24px]"
+                  className="w-[auto] h-[450px] object-cover rounded-[24px]"
                 />
                 {activeImage === 3 && (
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold">

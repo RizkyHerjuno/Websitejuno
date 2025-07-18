@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   FaEnvelope,
   FaInstagram,
@@ -11,8 +10,8 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#001F3F] text-white text-center py-0 px-0">
-      <hr className="border-white mb-4" />
+    <footer className="w-full bg-[#001F3F] text-white text-center px-0 pt-0 pb-[52px]">
+<hr className="border border-white opacity-50 mb-4" />
       <h2 className="mx-auto font-glancyrlight max-w-4xl text-xl sm:text-2xl lg:text-3xl mb-4">
         Connect with innovation. Explore our journey and be part of the future
         of robotics.
@@ -24,7 +23,7 @@ const Footer = () => {
         the perfect space to explore and grow.
       </p>
 
-      <div className="flex justify-center gap-6 text-xl sm:text-2xl mb-6">
+      <div className="flex justify-center gap-12 text-xl sm:text-2xl mb-6">
         <a href="#" className="hover:text-blue-400 transition">
           <FaEnvelope />
         </a>
@@ -45,9 +44,11 @@ const Footer = () => {
         </a>
       </div>
 
-      <hr className="border-white border-opacity-1000 mb-4" />
+      <hr className="border-white border-b border-opacity-1000 mb-4" />
 
-      <p className="font-medium text-xs text-white text-opacity-70">© 2025 ROBOTIIK 2025</p>
+      <p className="font-medium text-xs text-white text-opacity-70">
+        © 2025 ROBOTIIK 2025
+      </p>
     </footer>
   );
 };

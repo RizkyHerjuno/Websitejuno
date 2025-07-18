@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; 
 import robot1 from "../src/assets/robot1.jpg";
 
 const images = [
@@ -41,7 +41,7 @@ const Information = () => {
   };
 
   return (
-    <div className="font-glancyrlight bg-[#f5eedc] h-[650px] p-8 overflow-x-hidden">
+    <div className="font-glancyrlight bg-[#f5eedc] p-8 overflow-hidden">
       {/* Header Section */}
       <div className="mb-5 flex justify-between items-start mr-0">
         <div className="w-1/2 pr-0">
@@ -49,51 +49,51 @@ const Information = () => {
             What's New in Robotics...
           </h1>
           <p className="mt-2 text-3xl text-[black] font-semibold">
-            Stay ahead with exclusive insights on robotics trends, research, and
-            innovation.
+            Stay ahead with exclusive insights on robotics trends, research, and innovation.
           </p>
         </div>
         <div className="font-sfpro font-semibold w-1/4">
           <p className="text-s text-[black]">
-            Whether you're seeking hands-on innovation, collaborative
-            engineering projects, or an inspiring tech-driven environment,
-            ROBOTIIK has the perfect place for you to grow.
+            Whether you're seeking hands-on innovation, collaborative engineering projects, or an inspiring tech-driven environment, ROBOTIIK has the perfect place for you to grow.
           </p>
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="flex space-x-0 overflow-x-auto absolute flex gap-[0px] whitespace-nowrap overflow-hidden">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className="relative w-[400px] h-[425px] p-2 flex flex-col justify-between image-card"
-            onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={handleMouseLeave}
-          >
-            <img
-              src={image.src}
-              alt={`image${index + 1}`}
-              className="w-full h-full object-cover rounded-[20px]"
-            />
+      <div className="overflow-hidden w-full h-full">
+        {/* Flex container to allow horizontal scroll */}
+        <div className="flex gap-4 overflow-x-auto overflow-y-hidden whitespace-nowrap">
+          {images.map((image, index) => (
             <div
-              className={`absolute bottom-0 left-0 right-0 p-6 flex text-white transition-all duration-500 ease-in-out ${
-                hovered === index ? "translate-y-[-30px]" : "translate-y-0"
-              }`}
+              key={index}
+              className="relative w-[auto] h-[auto] p-2 flex flex-col justify-between image-card"
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
             >
-              <h2 className="text-3xl font-semibold">{image.title}</h2>
+              <img
+                src={image.src}
+                alt={`Image ${index + 1}`}
+                className=" max-h-[450px] max-w-[500px]" // Set a maximum height while keeping the width auto
+              />
+              <div
+                className={`absolute bottom-0 left-0 right-0 p-6 flex text-white transition-all duration-500 ease-in-out ${
+                  hovered === index ? "translate-y-[-30px]" : "translate-y-0"
+                }`}
+              >
+                <h2 className="text-3xl font-semibold">{image.title}</h2>
+              </div>
+              <div
+                className={`absolute bottom-0 left-0 right-0 p-6 text-white flex transition-all duration-500 ease-in-out ${
+                  hovered === index
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-4"
+                }`}
+              >
+                <p className="text-xl">{image.description}</p>
+              </div>
             </div>
-            <div
-              className={`absolute bottom-0 left-0 right-0 p-6 text-white flex transition-all duration-500 ease-in-out ${
-                hovered === index
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-4"
-              }`}
-            >
-              <p className="text-xl">{image.description}</p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

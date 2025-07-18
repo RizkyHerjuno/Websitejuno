@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="font-glancyrregular bg-[#001F3F] shadow-md sticky top-0 z-50">
+<nav className="font-glancyrregular bg-[#001F3F] shadow-md fixed top-0 left-0 w-full z-50 h-[64px]">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
