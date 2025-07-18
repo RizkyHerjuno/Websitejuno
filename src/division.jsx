@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
+// New import statement for robot1
+import robot1 from '/src/assets/robot1.jpg';
+
 const HoverCard = ({ image, title, height, width }) => {
   const [hovered, setHovered] = useState(false);
 
@@ -92,13 +95,13 @@ const Division = () => {
       {/* Card Section */}
       <div className="flex">
         <HoverCard
-          image="/src/assets/robot1.jpg"
+          image={robot1}
           title="Division 1"
           height={550}
           width={500}
         />
         <HoverCard
-          image="/src/assets/robot1.jpg"
+          image={robot1}
           title="Division 2"
           height={550}
           width={300}
@@ -106,13 +109,13 @@ const Division = () => {
       </div>
       <div className="flex">
         <HoverCard
-          image="/src/assets/robot1.jpg"
+          image={robot1}
           title="Division 3"
           height={550}
           width={300}
         />
         <HoverCard
-          image="/src/assets/robot1.jpg"
+          image={robot1}
           title="Division 4"
           height={550}
           width={500}

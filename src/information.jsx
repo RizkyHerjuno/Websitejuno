@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+// Import robot1 image here
+import robot1 from "/src/assets/robot1.jpg";
 
 const Information = () => {
   const [hovered, setHovered] = useState(null);
@@ -40,7 +42,7 @@ const Information = () => {
           onMouseLeave={handleMouseLeave}
         >
           <img
-            src="/src/assets/robot1.jpg"
+            src={robot1}
             alt="image1"
             className="w-full h-full object-cover rounded-[20px]"
           />
@@ -67,7 +69,7 @@ const Information = () => {
           onMouseLeave={handleMouseLeave}
         >
           <img
-            src="/src/assets/robot1.jpg"
+            src={robot1}
             alt="image2"
             className="w-full h-full object-cover rounded-[20px]"
           />
@@ -94,7 +96,7 @@ const Information = () => {
           onMouseLeave={handleMouseLeave}
         >
           <img
-            src="/src/assets/robot1.jpg"
+            src={robot1}
             alt="image3"
             className="w-full h-full object-cover rounded-[20px]"
           />
@@ -121,7 +123,7 @@ const Information = () => {
           onMouseLeave={handleMouseLeave}
         >
           <img
-            src="/src/assets/robot1.jpg"
+            src={robot1}
             alt="image4"
             className="w-full h-full object-cover rounded-[20px]"
           />
@@ -148,7 +150,7 @@ const Information = () => {
           onMouseLeave={handleMouseLeave}
         >
           <img
-            src="/src/assets/robot1.jpg"
+            src={robot1}
             alt="image5"
             className="w-full h-full object-cover rounded-[20px]"
           />
