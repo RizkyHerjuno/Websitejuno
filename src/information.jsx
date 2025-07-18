@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import robot1 from "/src/assets/robot1.jpg";
+import robot1 from "../src/assets/robot1.jpg";
 
 const images = [
   {
