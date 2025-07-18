@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Swiper, SwiperSlide } from "swiper/react";
+import robot1 from "../src/assets/robot1.jpg"; // Pastikan ini adalah jalur yang benar ke gambar robot1.jpg
 import "swiper/css";
 
 const Achievements = () => {
@@ -64,177 +64,111 @@ const Achievements = () => {
 
           {/* Gambar yang berjajar di bawah deskripsi dan berada di pojok kanan bawah */}
           <div className="absolute bottom-0 left-50 flex gap-[0px] whitespace-nowrap overflow-hidden">
-                {/* Gambar 1 */}
-                <div
-                  className={`w-[325px] h-[504px] rounded-[32px] p-[25px] transition-all duration-500 ease-in-out transform ${
-                    activeImage === 0 ? "scale-x-125 translate-x-10" : ""
-                  }`}
-                  onMouseEnter={() => handleImageHover(0)}
-                  onMouseLeave={() => setActiveImage(null)}
-                >
-                  <div className="relative w-full h-full">
-                    <img
-                      src="/src/assets/robot1.jpg"
-                      alt="Achievement 1"
-                      className="w-full h-full object-cover rounded-[24px]"
-                    />
-                    {activeImage === 0 && (
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold">
-                        Achievement 1
-                      </div>
-                    )}
+            {/* Gambar 1 */}
+            <div
+              className={`w-[325px] h-[504px] rounded-[32px] p-[25px] transition-all duration-500 ease-in-out transform ${
+                activeImage === 0 ? "scale-x-125 translate-x-10" : ""
+              }`}
+              onMouseEnter={() => handleImageHover(0)}
+              onMouseLeave={() => setActiveImage(null)}
+            >
+              <div className="relative w-full h-full">
+                <img
+                  src={robot1} // Menggunakan gambar yang diimpor
+                  alt="Achievement 1"
+                  className="w-full h-full object-cover rounded-[24px]"
+                />
+                {activeImage === 0 && (
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold">
+                    Achievement 1
                   </div>
-                </div>
+                )}
+              </div>
+            </div>
 
-                {/* Gambar 2 */}
-                <div
-                  className={`w-[325px] h-[504px] rounded-[24px] p-[25px] transition-all duration-500 ease-in-out transform ${
-                    activeImage === 1
-                      ? "scale-x-125 translate-x-10"
-                      : activeImage === 0
-                      ? "translate-x-[20%]"
-                      : ""
-                  }`}
-                  onMouseEnter={() => handleImageHover(1)}
-                  onMouseLeave={() => setActiveImage(null)}
-                >
-                  <div className="relative w-full h-full">
-                    <img
-                      src="/src/assets/robot1.jpg"
-                      alt="Achievement 2"
-                      className="w-full h-full object-cover rounded-[24px]"
-                    />
-                    {activeImage === 1 && (
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold">
-                        Achievement 2
-                      </div>
-                    )}
+            {/* Gambar 2 */}
+            <div
+              className={`w-[325px] h-[504px] rounded-[24px] p-[25px] transition-all duration-500 ease-in-out transform ${
+                activeImage === 1
+                  ? "scale-x-125 translate-x-10"
+                  : activeImage === 0
+                  ? "translate-x-[20%]"
+                  : ""
+              }`}
+              onMouseEnter={() => handleImageHover(1)}
+              onMouseLeave={() => setActiveImage(null)}
+            >
+              <div className="relative w-full h-full">
+                <img
+                  src={robot1} // Menggunakan gambar yang diimpor
+                  alt="Achievement 2"
+                  className="w-full h-full object-cover rounded-[24px]"
+                />
+                {activeImage === 1 && (
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold">
+                    Achievement 2
                   </div>
-                </div>
-                
-                {/* Gambar 3 */}
-                <div
-                  className={`w-[325px] h-[504px] rounded-[24px] p-[25px] transition-all duration-500 ease-in-out transform ${
-                    activeImage === 2
-                      ? "scale-x-125 translate-x-10"
-                      : activeImage === 1
-                      ? "translate-x-[20%]"
-                      : activeImage === 0
-                      ? "translate-x-[20%]"
-                      : ""
-                  }`}
-                  onMouseEnter={() => handleImageHover(2)}
-                  onMouseLeave={() => setActiveImage(null)}
-                >
-                  <div className="relative w-full h-full">
-                    <img
-                      src="/src/assets/robot1.jpg"
-                      alt="Achievement 3"
-                      className="w-full h-full object-cover rounded-[24px]"
-                    />
-                    {activeImage === 2 && (
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold">
-                        Achievement 3
-                      </div>
-                    )}
+                )}
+              </div>
+            </div>
+
+            {/* Gambar 3 */}
+            <div
+              className={`w-[325px] h-[504px] rounded-[24px] p-[25px] transition-all duration-500 ease-in-out transform ${
+                activeImage === 2
+                  ? "scale-x-125 translate-x-10"
+                  : activeImage === 1
+                  ? "translate-x-[20%]"
+                  : activeImage === 0
+                  ? "translate-x-[20%]"
+                  : ""
+              }`}
+              onMouseEnter={() => handleImageHover(2)}
+              onMouseLeave={() => setActiveImage(null)}
+            >
+              <div className="relative w-full h-full">
+                <img
+                  src={robot1} // Menggunakan gambar yang diimpor
+                  alt="Achievement 3"
+                  className="w-full h-full object-cover rounded-[24px]"
+                />
+                {activeImage === 2 && (
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold">
+                    Achievement 3
                   </div>
-                </div>
-
-              {/* Gambar 4 */}
-              <div
-                className={`w-[325px] h-[504px] rounded-[24px] p-[25px] transition-all duration-500 ease-in-out transform ${
-                  activeImage === 3
-                    ? "scale-x-125 translate-x-10"
-                    : activeImage === 2
-                    ? "translate-x-[20%]"
-                    : activeImage === 1
-                    ? "translate-x-[20%]"
-                    : activeImage === 0
-                    ? "translate-x-[20%]"
-                    : ""
-                }`}
-                onMouseEnter={() => handleImageHover(3)}
-                onMouseLeave={() => setActiveImage(null)}
-              >
-                <div className="relative w-full h-full">
-                  <img
-                    src="/src/assets/robot1.jpg"
-                    alt="Achievement 4"
-                    className="w-full h-full object-cover rounded-[24px]"
-                  />
-                  {activeImage === 3 && (
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold">
-                      Achievement 4
-                    </div>
-                  )}
-                </div>
+                )}
               </div>
+            </div>
 
-              {/* Gambar 5 */}
-              <div
-                className={`w-[325px] h-[504px] rounded-[24px] p-[25px] transition-all duration-500 ease-in-out transform ${
-                  activeImage === 4
-                    ? "scale-x-125 translate-x-10"
-                    : activeImage === 3
-                    ? "translate-x-[20%]"
-                    : activeImage === 2
-                    ? "translate-x-[20%]"
-                    : activeImage === 1
-                    ? "translate-x-[20%]"
-                    : activeImage === 0
-                    ? "translate-x-[20%]"
-                    : ""
-                }`}
-                onMouseEnter={() => handleImageHover(4)}
-                onMouseLeave={() => setActiveImage(null)}
-              >
-                <div className="relative w-full h-full">
-                  <img
-                    src="/src/assets/robot1.jpg"
-                    alt="Achievement 5"
-                    className="w-full h-full object-cover rounded-[24px]"
-                  />
-                  {activeImage === 4 && (
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold">
-                      Achievement 5
-                    </div>
-                  )}
-                </div>
+            {/* Gambar 4 */}
+            <div
+              className={`w-[325px] h-[504px] rounded-[24px] p-[25px] transition-all duration-500 ease-in-out transform ${
+                activeImage === 3
+                  ? "scale-x-125 translate-x-10"
+                  : activeImage === 2
+                  ? "translate-x-[20%]"
+                  : activeImage === 1
+                  ? "translate-x-[20%]"
+                  : activeImage === 0
+                  ? "translate-x-[20%]"
+                  : ""
+              }`}
+              onMouseEnter={() => handleImageHover(3)}
+              onMouseLeave={() => setActiveImage(null)}
+            >
+              <div className="relative w-full h-full">
+                <img
+                  src={robot1} // Menggunakan gambar yang diimpor
+                  alt="Achievement 4"
+                  className="w-full h-full object-cover rounded-[24px]"
+                />
+                {activeImage === 3 && (
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold">
+                    Achievement 4
+                  </div>
+                )}
               </div>
-
-              {/* Gambar 6 */}
-              <div
-                className={`w-[325px] h-[504px] rounded-[24px] p-[25px] transition-all duration-500 ease-in-out transform ${
-                  activeImage === 5
-                    ? "scale-x-125 translate-x-10"
-                    : activeImage === 4
-                    ? "translate-x-[20%]"
-                    : activeImage === 3
-                    ? "translate-x-[20%]"
-                    : activeImage === 2
-                    ? "translate-x-[20%]"
-                    : activeImage === 1
-                    ? "translate-x-[20%]"
-                    : activeImage === 0
-                    ? "translate-x-[20%]"
-                    : ""
-                }`}
-                onMouseEnter={() => handleImageHover(5)}
-                onMouseLeave={() => setActiveImage(null)}
-              >
-                <div className="relative w-full h-full">
-                  <img
-                    src="/src/assets/robot1.jpg"
-                    alt="Achievement 6"
-                    className="w-full h-full object-cover rounded-[24px]"
-                  />
-                  {activeImage === 5 && (
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold">
-                      Achievement 6
-                    </div>
-                  )}
-                </div>
-              </div>
+            </div>
           </div>
         </div>
       </section>
