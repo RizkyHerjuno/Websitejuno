@@ -10,7 +10,7 @@ const HoverCard = ({ image, title, height, width }) => {
 
   return (
     <div
-      className={`relative w-[${width}px] h-[${height}px] p-2 overflow-hidden rounded-[20px] transition-transform duration-300 ease-in-out`}
+      className={`relative w-[1440px] h-[1264px] p-2 overflow-hidden rounded-[20px] transition-transform duration-300 ease-in-out`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -22,7 +22,7 @@ const HoverCard = ({ image, title, height, width }) => {
 
       {/* Background Blur Effect */}
       <div
-        className={`absolute inset-5 top-50 bg-blur bg-opacity-50 rounded-[20px] transition-all duration-300 ease-in-out ${
+        className={`absolute inset-5 top-70 bg-blur bg-opacity-50 rounded-[20px] transition-all duration-300 ease-in-out ${
           hovered ? "backdrop-blur-md" : ""
         }`}
       ></div>
