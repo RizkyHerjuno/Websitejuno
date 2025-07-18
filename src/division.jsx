@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import robot1 from '../src/assets/robot1.jpg'; 
 
 const HoverCard = ({ image, title, height, width }) => {
   const [hovered, setHovered] = useState(false);
@@ -13,7 +14,7 @@ const HoverCard = ({ image, title, height, width }) => {
       style={{ height: `${height}px`, width: `${width}px` }} // Set dynamic height and width
     >
       <img
-        src={image}
+        src={robot1}
         alt={title}
         className="w-full h-full object-cover rounded-[20px]"
       />
