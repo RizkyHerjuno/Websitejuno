@@ -76,7 +76,7 @@ const About = () => {
               return (
                 <img
                   className={`${sizeClass} rounded-t-[28px] p-[12px]`}
-                  src={image.src}
+                  src={robot1}
                   alt={image.title}
                   key={index}
                 />
@@ -99,7 +99,7 @@ const About = () => {
               return (
                 <img
                   className={`${sizeClass} rounded-t-[28px] p-[12px]`}
-                  src={image.src}
+                  src={robot1}
                   alt={image.title}
                   key={index}
                 />
@@ -122,7 +122,7 @@ const About = () => {
               return (
                 <img
                   className={`${sizeClass} rounded-t-[28px] p-[12px]`}
-                  src={image.src}
+                  src={robot1}
                   alt={image.title}
                   key={index}
                 />
@@ -145,7 +145,7 @@ const About = () => {
               return (
                 <img
                   className={`${sizeClass} rounded-t-[28px] p-[12px]`}
-                  src={image.src}
+                  src={robot1}
                   alt={image.title}
                   key={index}
                 />
@@ -168,7 +168,7 @@ const About = () => {
               return (
                 <img
                   className={`${sizeClass} rounded-t-[28px] p-[12px]`}
-                  src={image.src}
+                  src={robot1}
                   alt={image.title}
                   key={index}
                 />
