@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import robot1 from '/src/assets/robot1.jpg'; // Pastikan ini sesuai dengan path yang benar
+import robot1 from '../src/assets/robot1.jpg'; 
 
 const Brand = () => {
   const [hovered, setHovered] = useState(null);
