@@ -63,7 +63,7 @@ const About = () => {
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
-            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
             className="flex flex-shrink-0"
           >
             {images.map((image, index) => {
@@ -86,7 +86,7 @@ const About = () => {
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
-            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
             className="flex flex-shrink-0"
           >
             {images.map((image, index) => {
@@ -109,7 +109,7 @@ const About = () => {
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
-            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
             className="flex flex-shrink-0"
           >
             {images.map((image, index) => {
@@ -132,7 +132,7 @@ const About = () => {
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
-            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
             className="flex flex-shrink-0"
           >
             {images.map((image, index) => {
@@ -155,7 +155,7 @@ const About = () => {
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
-            transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
             className="flex flex-shrink-0"
           >
             {images.map((image, index) => {

@@ -1,29 +1,29 @@
 import React, { useState } from "react";
-import robot2 from "../src/assets/robot.jpg";
+import robot1 from "../src/assets/robot1.jpg";
 
 const images = [
   {
-    src: robot2,
+    src: robot1,
     title: "Amarine",
     description: "This is a description of Amarine."
   },
   {
-    src: robot2,
+    src: robot1,
     title: "Quadcopter",
     description: "This is a description of Quadcopter."
   },
   {
-    src: robot2,
+    src: robot1,
     title: "RnD",
     description: "This is a description of RnD."
   },
   {
-    src: robot2,
+    src: robot1,
     title: "Humanoid",
     description: "This is a description of Humanoid."
   },
   {
-    src: robot2,
+    src: robot1,
     title: "MIT",
     description: "This is a description of MIT."
   },

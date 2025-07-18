@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import robot1 from "../src/assets/robot1.jpg"; // Pastikan ini adalah jalur yang benar ke gambar robot1.jpg
+import robot1 from "../src/assets/robot1.jpg"; 
 import "swiper/css";
 
 const Achievements = () => {
@@ -74,7 +74,7 @@ const Achievements = () => {
             >
               <div className="relative w-full h-full">
                 <img
-                  src={robot1} // Menggunakan gambar yang diimpor
+                  src={robot1} 
                   alt="Achievement 1"
                   className="w-full h-full object-cover rounded-[24px]"
                 />
