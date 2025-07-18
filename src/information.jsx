@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// Import robot1 image here
 import robot1 from "/src/assets/robot1.jpg";
 
 const Information = () => {
@@ -22,13 +21,16 @@ const Information = () => {
             What's New in Robotics...
           </h1>
           <p className="mt-2 text-3xl text-[black] font-semibold">
-            Stay ahead with exclusive insights on robotics trends, research, and innovation.
+            Stay ahead with exclusive insights on robotics trends, research, and
+            innovation.
           </p>
         </div>
 
         <div className="font-sfpro font-semibold w-1/4">
           <p className="text-s text-[black]">
-            Whether you're seeking hands-on innovation, collaborative engineering projects, or an inspiring tech-driven environment, ROBOTIIK has the perfect place for you to grow.
+            Whether you're seeking hands-on innovation, collaborative
+            engineering projects, or an inspiring tech-driven environment,
+            ROBOTIIK has the perfect place for you to grow.
           </p>
         </div>
       </div>
@@ -55,7 +57,9 @@ const Information = () => {
           </div>
           <div
             className={`absolute bottom-0 left-0 right-0 p-6 text-white flex transition-all duration-500 ease-in-out ${
-              hovered === 1 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              hovered === 1
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
             }`}
           >
             <p className="text-xl">This is a description of Amarine.</p>
@@ -82,7 +86,9 @@ const Information = () => {
           </div>
           <div
             className={`absolute bottom-0 left-0 right-0 p-6 text-white flex transition-all duration-500 ease-in-out ${
-              hovered === 2 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              hovered === 2
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
             }`}
           >
             <p className="text-xl">This is a description of Quadcopter.</p>
@@ -109,7 +115,9 @@ const Information = () => {
           </div>
           <div
             className={`absolute bottom-0 left-0 right-0 p-6 text-white flex transition-all duration-500 ease-in-out ${
-              hovered === 3 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              hovered === 3
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
             }`}
           >
             <p className="text-xl">This is a description of RnD.</p>
@@ -136,7 +144,9 @@ const Information = () => {
           </div>
           <div
             className={`absolute bottom-0 left-0 right-0 p-6 text-white flex transition-all duration-500 ease-in-out ${
-              hovered === 4 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              hovered === 4
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
             }`}
           >
             <p className="text-xl">This is a description of Humanoid.</p>
@@ -163,7 +173,9 @@ const Information = () => {
           </div>
           <div
             className={`absolute bottom-0 left-0 right-0 p-6 text-white justify-center items-center flex transition-all duration-500 ease-in-out ${
-              hovered === 5 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              hovered === 5
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
             }`}
           >
             <p className="text-xl">This is a description of MIT.</p>
