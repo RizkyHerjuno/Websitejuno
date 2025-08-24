@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import logo from "../src/assets/logo.png"
+import logo from "./assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,13 +11,13 @@ const Navbar = () => {
   const navLinks = [
     { title: "Home", href: "/", isActive: true },
     { title: "About", href: "/about" },
-    { title: "Division", href: "/division" },
+    { title: "Division", href: "/division" },  // pastikan menggunakan /executive
     { title: "Achievements", href: "/achievements" },
     { title: "Partners", href: "/partners" },
   ];
 
   return (
-<nav className="font-glancyrregular bg-[#001F3F] shadow-md fixed top-0 left-0 w-full z-50 h-[64px]">
+    <nav className="font-glancyrregular bg-[#001F3F] shadow-md fixed top-0 left-0 w-full z-50 h-[64px]">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">

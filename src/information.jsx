@@ -1,31 +1,31 @@
-import React, { useState } from "react"; 
-import robot1 from "../src/assets/robot1.jpg";
+import React, { useState } from "react";
+import robot1 from "./assets/robot1.jpg";
 
 const images = [
   {
     src: robot1,
     title: "Amarine",
-    description: "This is a description of Amarine."
+    description: "This is a description of Amarine.",
   },
   {
     src: robot1,
     title: "Quadcopter",
-    description: "This is a description of Quadcopter."
+    description: "This is a description of Quadcopter.",
   },
   {
     src: robot1,
     title: "RnD",
-    description: "This is a description of RnD."
+    description: "This is a description of RnD.",
   },
   {
     src: robot1,
     title: "Humanoid",
-    description: "This is a description of Humanoid."
+    description: "This is a description of Humanoid.",
   },
   {
     src: robot1,
     title: "MIT",
-    description: "This is a description of MIT."
+    description: "This is a description of MIT.",
   },
 ];
 
@@ -49,12 +49,15 @@ const Information = () => {
             What's New in Robotics...
           </h1>
           <p className="mt-2 text-3xl text-[black] font-semibold">
-            Stay ahead with exclusive insights on robotics trends, research, and innovation.
+            Stay ahead with exclusive insights on robotics trends, research, and
+            innovation.
           </p>
         </div>
         <div className="font-sfpro font-semibold w-1/4">
           <p className="text-s text-[black]">
-            Whether you're seeking hands-on innovation, collaborative engineering projects, or an inspiring tech-driven environment, ROBOTIIK has the perfect place for you to grow.
+            Whether you're seeking hands-on innovation, collaborative
+            engineering projects, or an inspiring tech-driven environment,
+            ROBOTIIK has the perfect place for you to grow.
           </p>
         </div>
       </div>

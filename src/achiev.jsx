@@ -1,7 +1,7 @@
-import React, { useState } from "react"; 
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import robot1 from "../src/assets/robot1.jpg"; 
+import robot1 from "./assets/robot1.jpg";
 import "swiper/css";
 
 const Achievements = () => {

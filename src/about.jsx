@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import robot1 from '../src/assets/robot1.jpg'; 
+import robot1 from "./assets/robot1.jpg";
 
 const images = [
   { src: robot1, title: "Robot 1" },
@@ -45,8 +45,8 @@ const About = () => {
             }}
           >
             The development of robotics in Indonesia signals a promising future,
-            driven by the capabilities of researchers and academics. As a form of
-            support, the Faculty of Computer Science at Universitas Brawijaya
+            driven by the capabilities of researchers and academics. As a form
+            of support, the Faculty of Computer Science at Universitas Brawijaya
             (FILKOM UB) provides a platform for its students through a robotics
             community known as ROBOTIIK. ROBOTIIK, or PTIIK Robotics, is a
             robotics community under the supervision of the Computer Systems and
@@ -72,29 +72,7 @@ const About = () => {
                 {images.map((image, index) => {
                   const sizeClass =
                     index % 2 === 0
-                      ? "w-[150px] h-[150px]" 
-                      : "w-[220px] h-[150px]"; 
-
-                  return (
-                    <img
-                      className={`${sizeClass} rounded-t-[28px] p-[12px]`}
-                      src={image.src}
-                      alt={image.title}
-                      key={index}
-                    />
-                  );
-                })}
-              </motion.div>
-              <motion.div
-                initial={{ x: 0 }}
-                animate={{ x: "-100%" }}
-                transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-                className="flex flex-shrink-0"
-              >
-                {images.map((image, index) => {
-                  const sizeClass =
-                    index % 2 === 0
-                      ? "w-[150px] h-[150px]" 
+                      ? "w-[150px] h-[150px]"
                       : "w-[220px] h-[150px]";
 
                   return (
@@ -116,8 +94,8 @@ const About = () => {
                 {images.map((image, index) => {
                   const sizeClass =
                     index % 2 === 0
-                      ? "w-[150px] h-[150px]" 
-                      : "w-[220px] h-[150px]"; 
+                      ? "w-[150px] h-[150px]"
+                      : "w-[220px] h-[150px]";
 
                   return (
                     <img
@@ -138,7 +116,29 @@ const About = () => {
                 {images.map((image, index) => {
                   const sizeClass =
                     index % 2 === 0
-                      ? "w-[150px] h-[150px]" 
+                      ? "w-[150px] h-[150px]"
+                      : "w-[220px] h-[150px]";
+
+                  return (
+                    <img
+                      className={`${sizeClass} rounded-t-[28px] p-[12px]`}
+                      src={image.src}
+                      alt={image.title}
+                      key={index}
+                    />
+                  );
+                })}
+              </motion.div>
+              <motion.div
+                initial={{ x: 0 }}
+                animate={{ x: "-100%" }}
+                transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+                className="flex flex-shrink-0"
+              >
+                {images.map((image, index) => {
+                  const sizeClass =
+                    index % 2 === 0
+                      ? "w-[150px] h-[150px]"
                       : "w-[220px] h-[150px]";
 
                   return (

@@ -6,6 +6,7 @@ import Division from "./division";
 import Achievements from "./achiev";
 import Brand from "./brand";
 import Information from "./information";
+import DivisionSection from "../Division/executive";
 import Contact from "./contact";
 import Footer from "./footer";
 
@@ -32,6 +33,7 @@ const App = () => {
         <Brand />
       </div>
       <Information />
+      <DivisionSection />
       <Contact />
       <Footer />
     </div>
